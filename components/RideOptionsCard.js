@@ -4,7 +4,9 @@ import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
 import { Icon } from 'react-native-elements/dist/icons/Icon';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSelector } from 'react-redux';
 import tw from 'tailwind-react-native-classnames';
+import { selectTravelTimeInformation } from '../slices/navSlices';
 
 const data = [
     {
@@ -29,6 +31,7 @@ const data = [
 const RideOptionsCard = () => {
     const navigation = useNavigation();
     const [selected, setSelected] = useState(null)
+    const travelTimeInformation = useSelector(selectTravelTimeInformation)
     return (
         
         <SafeAreaView style={[tw`bg-white flex-grow`]}>
@@ -42,7 +45,7 @@ const RideOptionsCard = () => {
                     <Icon name='chevron-left' type='fontawesome' size={25}/>
                 </TouchableOpacity>
                 </View>
-                <Text style={[tw`-mt-10 text-center py-5 text-xl ml-20`]}>Select a Ride</Text>
+                <Text style={[tw`-mt-10 text-center py-5 text-xl ml-12`]}>Select a Ride - {travelTimeInformation?.distance.text}</Text>
             </View>
             <FlatList 
               data={data}
@@ -65,7 +68,7 @@ const RideOptionsCard = () => {
                     />
                     <View style={[tw`-ml-6`]}>
                       <Text style={[tw`text-xl font-semibold`]}>{title}</Text>
-                      <Text>Travel time</Text>
+                      <Text>{travelTimeInformation?.duration.text}</Text>
                     </View>
                     <View>
                       
