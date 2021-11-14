@@ -48,18 +48,7 @@ const Map = () => {
             strokeWidth={3}
           />
         )}
-        {origin?.location && (
-          <Marker
-            coordinate={{
-              latitude: origin.location.lat,
-              longitude: origin.location.lng
-            }}
-            title='Origin'
-            description={destination.description}
-            identifier='origin'
-            />
-          
-        )}
+
         {destination?.location && (
           <Marker
             coordinate={{
@@ -70,8 +59,21 @@ const Map = () => {
             description={destination.description}
             identifier='destination'
             />
+        )}
+
+        {origin?.location && (
+          <Marker
+            coordinate={{
+              latitude: origin.location.lat,
+              longitude: origin.location.lng
+            }}
+            title='Origin'
+            description={origin.description}
+            identifier='origin'
+            />
           
         )}
+        
         </MapView>
     )
 }
