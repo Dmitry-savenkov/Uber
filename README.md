@@ -1,5 +1,6 @@
 
 # Uber-ReactNative app
+*Uber 2.0 with REACT NATIVE! (Navigation, Redux, Tailwind CSS & Google Autocomplete)*
 
 Run the app:
 ```sh
@@ -9,13 +10,9 @@ yarn
 expo start
 ```
 
-Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
+![alt text](screen/img1.png "")​
 
-![alt text](screen/img2.png "")​
+![alt text](screen/img2.png "")​  
 
-Then open [http://localhost:5000/graphql/](http://localhost:5000/graphql/) to see your graphql schema.<br>
-
-![alt text](screen/img1.png "")​  
-
-
+![alt text](screen/img3.png "")​  
 
