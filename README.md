@@ -5,6 +5,9 @@ Run the app:
 ```sh
 yarn
 ```
+```sh
+expo start
+```
 
 Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
 
