@@ -10,6 +10,7 @@
 👉  Use React Native Navigation to navigate between screens<br>
 👉  Use React Native Elements to elevate your app design<br>
 
+first screen          |  second screen    |  third screen
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](screen/img3.png)  |  ![](screen/img1.png)   |   ![](screen/img2.png)
 
