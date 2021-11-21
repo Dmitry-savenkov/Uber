@@ -10,6 +10,9 @@
 👉  Use React Native Navigation to navigate between screens<br>
 👉  Use React Native Elements to elevate your app design<br>
 
+:-------------------------:|:-------------------------:|:-------------------------:
+![](screen/img3.png)  |  ![](screen/img1.png)   |   ![](screen/img2.png)
+
 Run the app:
 ```sh
 yarn
@@ -17,10 +20,4 @@ yarn
 ```sh
 expo start
 ```
-
-![alt text](screen/img3.png "")​
-
-![alt text](screen/img1.png "")​  
-
-![alt text](screen/img2.png "")​  
 
